@@ -1,0 +1,16 @@
+MIN XOR Value
+ Given an array of N integers, find the pair of integers in the array which have minimum XOR value. Report the minimum XOR value.
+
+Examples :
+Input
+0 4 3 9
+Output
+3 (0 XOR 3)
+Input
+0 8 7 10
+Output
+2 (8 XOR 10)
+
+Constraints:
+2 <= N <= 100 000
+0 <= A[i] <= 1 000 000 000
