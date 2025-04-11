@@ -1,0 +1,49 @@
+Prime Sum
+ Accept a number N up to 5 digits long in the positional numeral system formed by symbols 0, 1, ... 9, A, ..., Z. Also, accept another symbol S other than zero.
+
+Considering N to be represented in the least base possible between 2 and 36, identify the smallest prime number greater than  N that contains at least one occurrence of S in it in base S + 1.
+
+(Refer example section for a better understanding). Prime number should be identified with respect to Base 10 i.e. a regular prime number.
+
+Constraints
+Length of N <= 5
+Max Base = 36
+Face values for symbols:
+Symbol => Value in base 10
+
+0 => 0
+
+1 => 1
+
+2 => 2
+
+….
+
+9 => 9
+
+A => 10
+
+B => 11
+
+….
+
+Z => 35
+
+Input Format
+First line contains T, the number of test cases. Each test case contains:
+One line containing two integers, N and S separated with space.
+Output
+Print the smallest prime number greater than or equal to N that contains at least one occurrence of S in it, in base S + 1.
+Example Test Case 1
+2
+10 B
+ZZ Z
+Output
+B
+11Z
+Explanation 1
+The least possible base for N is 2 and its value in that base is 2. We want the smallest prime number in base 12 (1 more than the face value of B, 11) that contains symbol B and is greater than or equal to 2. The first few numbers in ascending order in base 12 containing face value B are B (value 11), 1B (value 1 * 12 + 11 = 23), 2B (value 2 * 12 + 11 = 35): of these the smallest number that is prime is 11, which is greater than N. Hence, the output is B.
+
+Explanation 2
+The least possible base for N is 36 and its value in that base is 35 * 36 ^1 + 35 = 1295. The first few numbers in ascending order in base 36 (1 more than the face value of Z, 35) containing face value Z and greater than N are 10Z (1 * 36^2 + 0*36^1 + 35 = 1331, non-prime), 11Z (1 * 36^2 + 1 * 36^1 + 35 = 1367, a prime). Hence, the output is 11Z.
+
